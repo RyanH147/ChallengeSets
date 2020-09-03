@@ -5,7 +5,7 @@ namespace ChallengeSets
     {
         public bool AreTwoNumbersTheSame(int num1, int num2)
         {
-            if(num1 == num2) 
+            if(num1 == num2) // Refactored = return num1 == num2;
             {
                 return true;
             }
@@ -37,7 +37,11 @@ namespace ChallengeSets
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+            if (nameOfPerson == "") //Refactored = return (nameOfPerson == "") ? "Hello!" : $"Hello, {nameOfPerson}!";
+            {
+                return "Hello!";
+            }
+            return $"Hello, {nameOfPerson}!";
         }
 
         public string GetHey()
