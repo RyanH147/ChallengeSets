@@ -33,7 +33,10 @@ namespace ChallengeSets
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            throw new NotImplementedException();
+            int expected = Math.Min(number1, number2);
+            {
+                return expected;
+            }
         }
 
         public long Multiply(long factor1, long factor2)
