@@ -25,7 +25,10 @@ namespace ChallengeSets
 
         public int Add(int number1, int number2)
         {
-            throw new NotImplementedException();
+            int expectedSum = number1 += number2;
+            {
+                return expectedSum;
+            }
         }
 
         public int GetSmallestNumber(int number1, int number2)
@@ -35,7 +38,10 @@ namespace ChallengeSets
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            long product = factor1 *= factor2;
+            {
+                return product;
+            }
         }
 
         public string GetGreeting(string nameOfPerson)
