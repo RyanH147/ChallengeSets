@@ -17,7 +17,10 @@ namespace ChallengeSets
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            double expectedDifference = minuend -= subtrahend;
+            {
+                return expectedDifference;
+            }
         }
 
         public int Add(int number1, int number2)
